@@ -78,7 +78,7 @@ packages.map(function(pkg) {
         };
       }
       return null;
-    });
+    }).filter(Boolean);
     if (errors.length) {
       valid = false;
     }
