@@ -281,6 +281,7 @@ packages.map(function(pkg) {
     } else if (json.autoupdate) {
         var autoupdate = json.autoupdate;
         if (autoupdate.fileMap) {
+            assert.ok(autoupdate.basePath === undefined, "The autoupadte.basePath should appear inside of fileMap only.");
             assert.ok(Array.isArray(autoupdate.fileMap) === true, "The fileMap should be an array.");
             autoupdate.fileMap.forEach(function (c) {
                 assert.ok(c && typeof c.basePath === "string", "The basePath should be a string.");
