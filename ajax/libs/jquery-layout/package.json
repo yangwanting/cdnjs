@@ -18,6 +18,10 @@
       "*.css"
     ]
   },
+  "licenses": [
+    "MIT",
+    "GPL-3.0"
+  ]
   "repository": {
     "type": "git",
     "url": "git://github.com/allpro/layout.git"
